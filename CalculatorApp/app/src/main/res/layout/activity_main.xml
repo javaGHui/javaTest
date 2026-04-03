@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <!-- Display Screen -->
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/display_background"
+        android:gravity="end|bottom"
+        android:padding="16dp"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.25" />
+
+    <!-- Button Grid -->
+    <GridLayout
+        android:id="@+id/buttonGrid"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tvDisplay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Row 1: Clear, Delete, Percent, Divide -->
+        <Button
+            android:id="@+id/btnClear"
+            style="@style/CalculatorButton.Function"
+            android:text="@string/clear" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            style="@style/CalculatorButton.Function"
+            android:text="@string/delete" />
+
+        <Button
+            android:id="@+id/btnPercent"
+            style="@style/CalculatorButton.Function"
+            android:text="@string/percent" />
+
+        <Button
+            android:id="@+id/btnDivide"
+            style="@style/CalculatorButton.Operator"
+            android:text="@string/divide" />
+
+        <!-- Row 2: 7, 8, 9, Multiply -->
+        <Button
+            android:id="@+id/btnSeven"
+            style="@style/CalculatorButton.Number"
+            android:text="@string/seven" />
+
+        <Button
+            android:id="@+id/btnEight"
+            style="@style/CalculatorButton.Number"
+            android:text="@string/eight" />
+
+        <Button
+            android:id="@+id/btnNine"
+            style="@style/CalculatorButton.Number"
+            android:text="@string/nine" />
+
+        <Button
+            android:id="@+id/btnMultiply"
+            style="@style/CalculatorButton.Operator"
+            android:text="@string/multiply" />
+
+        <!-- Row 3: 4, 5, 6, Subtract -->
+        <Button
+            android:id="@+id/btnFour"
+            style="@style/CalculatorButton.Number"
+            android:text="@string/four" />
+
+        <Button
+            android:id="@+id/btnFive"
+            style="@style/CalculatorButton.Number"
+            android:text="@string/five" />
+
+        <Button
+            android:id="@+id/btnSix"
+            style="@style/CalculatorButton.Number"
+            android:text="@string/six" />
+
+        <Button
+            android:id="@+id/btnSubtract"
+            style="@style/CalculatorButton.Operator"
+            android:text="@string/subtract" />
+
+        <!-- Row 4: 1, 2, 3, Add -->
+        <Button
+            android:id="@+id/btnOne"
+            style="@style/CalculatorButton.Number"
+            android:text="@string/one" />
+
+        <Button
+            android:id="@+id/btnTwo"
+            style="@style/CalculatorButton.Number"
+            android:text="@string/two" />
+
+        <Button
+            android:id="@+id/btnThree"
+            style="@style/CalculatorButton.Number"
+            android:text="@string/three" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            style="@style/CalculatorButton.Operator"
+            android:text="@string/add" />
+
+        <!-- Row 5: 0 (span 2), Decimal, Equals -->
+        <Button
+            android:id="@+id/btnZero"
+            style="@style/CalculatorButton.Number"
+            android:layout_columnSpan="2"
+            android:text="@string/zero" />
+
+        <Button
+            android:id="@+id/btnDecimal"
+            style="@style/CalculatorButton.Number"
+            android:text="@string/decimal" />
+
+        <Button
+            android:id="@+id/btnEquals"
+            style="@style/CalculatorButton.Operator"
+            android:text="@string/equals" />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

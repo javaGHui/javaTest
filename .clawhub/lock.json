@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "skills": {
+    "skill-vetter": {
+      "version": "1.0.0",
+      "installedAt": 1773732361460
+    },
+    "self-improving-agent": {
+      "version": "3.0.4",
+      "installedAt": 1773733502122
+    },
+    "summarize": {
+      "version": "1.0.0",
+      "installedAt": 1773733757131
+    },
+    "cron": {
+      "version": "1.0.0",
+      "installedAt": 1773733863461
+    },
+    "gog": {
+      "version": "1.0.0",
+      "installedAt": 1773733983292
+    },
+    "github": {
+      "version": "1.0.0",
+      "installedAt": 1773909813455
+    },
+    "neural-memory": {
+      "version": "3.2.1",
+      "installedAt": 1774663785753
+    },
+    "notion": {
+      "version": "1.0.0",
+      "installedAt": 1774665662299
+    },
+    "persistent-agent-memory": {
+      "version": "1.0.4",
+      "installedAt": 1774666322429
+    }
+  }
+}

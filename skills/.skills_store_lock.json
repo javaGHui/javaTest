@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "neural-memory": {
+      "name": "Neural Memory",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=neural-memory",
+      "source": "skillhub",
+      "version": "3.2.1"
+    }
+  }
+}
